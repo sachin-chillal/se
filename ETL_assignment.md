@@ -4,9 +4,11 @@
 - 3 Medium Assignments
 - 3 Hard Assignments
 
-**`raw_event_data.json`**
+File **[raw_event_data.json](./raw_event_data.json)**
 
 This file contains unprocessed event logs, which is the perfect starting point for an ETL pipeline.
+
+API Endpoint https://raw.githubusercontent.com/sachin-chillal/se/refs/heads/main/raw_event_data.json
 
 ***
 
