@@ -1,0 +1,3000 @@
+[
+  {
+    "event_id": "c7a8b2f0-1e9d-4c3b-8a7e-1f2d3c4b5a6b",
+    "timestamp": "2025-07-25T14:30:15.123Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-456",
+      "product_name": "Wireless Keyboard",
+      "quantity": 1,
+      "price_details": {
+        "amount": 75.99,
+        "currency": "USD"
+      },
+      "discounts_applied": [
+        "SUMMER10"
+      ]
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_12345abcde\",\"payment_method\":\"CreditCard\",\"card_last4\":\"4242\"}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "d8b9c3f1-2f0e-5d4c-9b8f-2g3e4d5c6b7c",
+    "timestamp": "2025-07-25T14:32:05.456+05:30",
+    "user_data": {
+      "userId": 1088,
+      "profile": {
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "email": "bob.smith@work.net",
+        "dob": "21/08/1985",
+        "address": {
+          "street": "456 Oak Ave",
+          "city": "Toronto",
+          "state": "ON",
+          "postal_code": "M5V 2T6",
+          "country_code": "CA"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "203.0.113.15",
+      "device_type": "desktop"
+    },
+    "source": "API",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"oauth_google\"}",
+    "metadata": {
+      "session_id": "sess_pqr456",
+      "client_version": "v1.9.5",
+      "tags": [
+        "frequent_user"
+      ]
+    }
+  },
+  {
+    "event_id": "e9c0d4g2-3g1f-6e5d-0c9g-3h4f5e6d7c8d",
+    "timestamp": "2025-07-25T14:35:10",
+    "user_data": {
+      "user_id": 2048,
+      "profile": {
+        "name": "Charlie Brown",
+        "email": "charlie-invalid-email",
+        "dob": "October 02, 1950",
+        "address": {
+          "street": "789 Pine Ln",
+          "city": "London",
+          "state": null,
+          "postal_code": 12345,
+          "country_code": "GB"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/settings/profile",
+      "referrer": "https://myapp.com/dashboard",
+      "duration_seconds": 180
+    },
+    "source_system": "MobileApp_iOS",
+    "raw_payload": "{\"dom_load_ms\":120,\"server_ip\":\"10.0.0.5\"}",
+    "metadata": {
+      "session_id": "sess_abc123",
+      "client_version": "v3.0.1",
+      "tags": []
+    }
+  },
+  {
+    "event_id": "f0d1e5h3-4h2g-7f6e-1d0h-4i5g6f7e8d9e",
+    "timestamp": "2025-07-25T14:40:00Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "logout",
+    "event_details": {
+      "reason": "user_initiated"
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"session_duration\":600}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "a1b2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
+    "timestamp": "2025-07-26T09:15:45.987Z",
+    "user_data": {
+      "user_id": 3055,
+      "profile": {
+        "firstName": "Diana",
+        "lastName": "Prince",
+        "email": "diana.prince@themyscira.org",
+        "dob": "1941-10-25",
+        "address": {
+          "street": "1 Paradise Island",
+          "city": "Mumbai",
+          "state": "MH",
+          "postal_code": "400001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "pending"
+    },
+    "event_type": "add_to_cart",
+    "event_details": {
+      "item_id": "ITEM-7890",
+      "item_name": "Lasso of Truth",
+      "quantity": 1
+    },
+    "source_system": "MobileApp_Android",
+    "raw_payload": "{\"inventory_check\":\"passed\",\"recommendation_source\":\"homepage_banner\"}",
+    "metadata": {
+      "session_id": "sess_jklmno",
+      "client_version": "v2.5.3",
+      "tags": [
+        "new_user",
+        "region:ap-south-1"
+      ]
+    }
+  },
+  {
+    "event_id": "b2c3d4e5-f6g7-b8c9-d0e1-f2g3b4c5d6e7",
+    "timestamp": "2025-07-26T10:05:12.321-04:00",
+    "user_data": {
+      "user_id": 1088,
+      "profile": {
+        "name": "Bob Smith",
+        "email": "bob.smith@work.net",
+        "dob": "21/08/1985",
+        "address": null
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/products/PROD-456",
+      "referrer": null,
+      "duration_seconds": 65
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"dom_load_ms\":85}",
+    "metadata": {
+      "session_id": "sess_qrstuv",
+      "client_version": "v1.9.6",
+      "tags": [
+        "frequent_user"
+      ]
+    }
+  },
+  {
+    "event_id": "c3d4e5f6-g7h8-c9d0-e1f2-g3h4c5d6e7f8",
+    "timestamp": "2025-07-27T11:20:30.000Z",
+    "user_data": {
+      "user_id": 4011,
+      "profile": {
+        "firstName": "Eve",
+        "lastName": "Adams",
+        "email": "eve@first.com",
+        "dob": "January 01, 1970",
+        "address": {
+          "street": "1 Garden Path",
+          "city": "Sydney",
+          "state": "NSW",
+          "postal_code": "2000",
+          "country_code": "AU"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-101",
+      "product_name": "Apple",
+      "quantity": 12,
+      "price_details": {
+        "amount": 24.00,
+        "currency": "AUD"
+      },
+      "discounts_applied": null
+    },
+    "source_system": "BackendJob",
+    "raw_payload": "{\"transaction_id\":\"txn_67890fghij\",\"payment_method\":\"DirectDebit\",\"subscription_id\":\"sub_123\"}",
+    "metadata": {
+      "session_id": "sess_wxy890",
+      "client_version": "N/A",
+      "tags": [
+        "subscriber",
+        "region:ap-southeast-2"
+      ]
+    }
+  },
+  {
+    "event_id": "d4e5f6g7-h8i9-d0e1-f2g3-h4i5d6e7f8g9",
+    "timestamp": "2025-07-28T18:00:05",
+    "user_data": {
+      "user_id": 2048,
+      "profile": {
+        "name": "Charlie Brown",
+        "email": "charlie@peanuts.com",
+        "dob": "October 02, 1950",
+        "address": {
+          "street": "789 Pine Ln",
+          "city": "London",
+          "postal_code": "W1A 1AA",
+          "country_code": "GB"
+        }
+      },
+      "account_status": null
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "198.51.100.22",
+      "device_type": "tablet"
+    },
+    "source": "MobileApp_iOS",
+    "raw_payload": "{\"login_success\":false,\"reason\":\"incorrect_password\",\"attempt\":3}",
+    "metadata": {
+      "session_id": "sess_def456",
+      "client_version": "v3.0.2",
+      "tags": []
+    }
+  },
+  {
+    "event_id": "e5f6g7h8-i9j0-e1f2-g3h4-i5j6e7f8g9h0",
+    "timestamp": "2025-07-29T22:45:18.777Z",
+    "user_data": {
+      "userId": 5001,
+      "profile": {
+        "name": "Frank Miller",
+        "email": "frank.miller@dark.knight",
+        "dob": "1957-01-27",
+        "address": {
+          "street": "Sin City",
+          "city": "Basin City",
+          "state": "CA",
+          "postal_code": 90210,
+          "country_code": "US"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "update_profile",
+    "event_details": {
+      "fields_updated": [
+        "email",
+        "address"
+      ]
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"update_source\":\"user_settings_page\",\"previous_email\":\"old.frank@email.com\"}",
+    "metadata": {
+      "session_id": "sess_ghi789",
+      "client_version": "v2.2.0",
+      "tags": [
+        "data_update",
+        "region:us-west-2"
+      ]
+    }
+  },
+  {
+    "event_id": "f6g7h8i9-j0k1-f2g3-h4i5-j6k7f8g9h0i1",
+    "timestamp": "2025-07-30T01:10:00.123+09:00",
+    "user_data": {
+      "user_id": 6077,
+      "profile": {
+        "firstName": "Grace",
+        "lastName": "Hopper",
+        "email": "grace@cobol.mil",
+        "dob": "09/12/1906",
+        "address": {
+          "street": "1 Navy St",
+          "city": "Tokyo",
+          "state": "Tokyo",
+          "postal_code": "100-0001",
+          "country_code": "JP"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "api_access",
+    "event_details": {
+      "endpoint": "/v1/data/export",
+      "api_key_used": "key_grace_..."
+    },
+    "source": "API",
+    "raw_payload": "{\"request_size_bytes\":1024,\"response_size_bytes\":5242880}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "N/A",
+      "tags": [
+        "developer",
+        "region:ap-northeast-1"
+      ]
+    }
+  },
+  {
+    "event_id": "b8e1f0a2-3c4d-5b6e-7a8b-9c0d1e2f3a4b",
+    "timestamp": "2025-07-22T18:45:10.555Z",
+    "user_data": {
+      "user_id": 1138,
+      "profile": {
+        "name": "Heidi Klum",
+        "email": "heidi.k@projectrunway.com",
+        "dob": "1973-06-01",
+        "address": {
+          "street": "Fashion Ave",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10018",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-789",
+      "product_name": "Designer Scarf",
+      "quantity": 2,
+      "price_details": {
+        "amount": 550.00,
+        "currency": "EUR"
+      },
+      "discounts_applied": [
+        "VIP20"
+      ]
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_lmnop12345\",\"payment_method\":\"Amex\",\"card_last4\":\"1005\"}",
+    "metadata": {
+      "session_id": "sess_uvw456",
+      "client_version": "v2.1.5",
+      "tags": [
+        "vip_customer",
+        "region:eu-central-1"
+      ]
+    }
+  },
+  {
+    "event_id": "c9f2g1b3-4d5e-6c7f-8b9c-0d1e2f3a4b5c",
+    "timestamp": "2025-07-22T19:00:00.000+01:00",
+    "user_data": {
+      "userId": 1201,
+      "profile": {
+        "firstName": "Ivan",
+        "lastName": "Drago",
+        "email": "ivan.drago@ussr.gov",
+        "dob": "01/11/1961",
+        "address": {
+          "street": "Red Square 1",
+          "city": "Moscow",
+          "state": null,
+          "postal_code": "101000",
+          "country_code": "RU"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "5.255.255.60",
+      "device_type": "desktop"
+    },
+    "source": "API",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"biometric\"}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v1.0.0",
+      "tags": [
+        "high_risk"
+      ]
+    }
+  },
+  {
+    "event_id": "d0g3h2c4-5e6f-7d8g-9c0d-1e2f3a4b5c6d",
+    "timestamp": "2025-07-23T05:30:55",
+    "user_data": {
+      "user_id": 1337,
+      "profile": {
+        "name": "Judy Garland",
+        "email": "judy@oz.net",
+        "dob": "June 10, 1922",
+        "address": {
+          "street": "Yellow Brick Road",
+          "city": "Emerald City",
+          "state": "OZ",
+          "postal_code": 90210,
+          "country_code": "OZ"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/home",
+      "referrer": "external_link",
+      "duration_seconds": 45
+    },
+    "source_system": "MobileApp_Android",
+    "raw_payload": "{\"dom_load_ms\":210,\"server_ip\":\"10.0.0.8\"}",
+    "metadata": {
+      "session_id": "sess_123abc",
+      "client_version": "v2.8.1",
+      "tags": []
+    }
+  },
+  {
+    "event_id": "e1h4i3d5-6f7g-8e9h-0d1e-2f3a4b5c6d7e",
+    "timestamp": "2025-07-23T05:32:15Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "add_to_cart",
+    "event_details": {
+      "item_id": "ITEM-1234",
+      "item_name": "Ergonomic Mouse",
+      "quantity": 1
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"inventory_check\":\"passed\",\"recommendation_source\":\"similar_items\"}",
+    "metadata": {
+      "session_id": "sess_mno123",
+      "client_version": "v2.1.1",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "f2i5j4e6-7g8h-9f0i-1e2f-3a4b5c6d7e8f",
+    "timestamp": "2025-07-24T12:00:00.500+05:30",
+    "user_data": {
+      "user_id": 1492,
+      "profile": {
+        "firstName": "Ken",
+        "lastName": "Thompson",
+        "email": "ken@unix.org",
+        "dob": "1943-02-04",
+        "address": {
+          "street": "Bell Labs",
+          "city": "Bangalore",
+          "state": "KA",
+          "postal_code": "560001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "api_access",
+    "event_details": {
+      "endpoint": "/v2/users/1492",
+      "api_key_used": "key_ken_..."
+    },
+    "source_system": "BackendJob",
+    "raw_payload": "{\"request_size_bytes\":256,\"response_size_bytes\":2048}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "N/A",
+      "tags": [
+        "internal",
+        "region:ap-south-1"
+      ]
+    }
+  },
+  {
+    "event_id": "g3j6k5f7-8h9i-0g1j-2f3a-4b5c6d7e8f9g",
+    "timestamp": "2025-07-24T13:05:22.121-07:00",
+    "user_data": {
+      "user_id": 1555,
+      "profile": {
+        "name": "Lara Croft",
+        "email": "lara.croft-tomb-raider.com",
+        "dob": "14/02/1968",
+        "address": {
+          "street": "Croft Manor",
+          "city": "Surrey",
+          "state": null,
+          "country_code": "GB"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/artifacts/daggers",
+      "referrer": "https://bing.com",
+      "duration_seconds": 320
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"dom_load_ms\":150}",
+    "metadata": {
+      "session_id": "sess_pqr456",
+      "client_version": "v3.0.0",
+      "tags": [
+        "adventurer"
+      ]
+    }
+  },
+  {
+    "event_id": "h4k7l6g8-9i0j-1h2k-3g4b-5c6d7e8f9g0h",
+    "timestamp": "2025-07-25T02:15:45.000Z",
+    "user_data": {
+      "userId": 1601,
+      "profile": {
+        "firstName": "Michael",
+        "lastName": "Jordan",
+        "email": "mj23@bulls.com",
+        "dob": "February 17, 1963",
+        "address": {
+          "street": "1901 W Madison St",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": 60612,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-23",
+      "product_name": "Air Jordans",
+      "quantity": 2,
+      "price_details": {
+        "amount": 450.00,
+        "currency": "USD"
+      },
+      "discounts_applied": null
+    },
+    "source_system": "MobileApp_iOS",
+    "raw_payload": "{\"transaction_id\":\"txn_qrstuv6789\",\"payment_method\":\"PayPal\",\"confirmation_email_sent\":true}",
+    "metadata": {
+      "session_id": "sess_stu789",
+      "client_version": "v4.1.0",
+      "tags": [
+        "celebrity",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "i5l8m7h9-0j1k-2i3l-4h5c-6d7e8f9g0h1i",
+    "timestamp": "2025-07-25T02:18:00Z",
+    "user_data": {
+      "user_id": 1601,
+      "profile": {
+        "name": "Michael Jordan",
+        "email": "mj23@bulls.com",
+        "dob": "February 17, 1963",
+        "address": {
+          "street": "1901 W Madison St",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": 60612,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "logout",
+    "event_details": {
+      "reason": "timeout"
+    },
+    "source": "MobileApp_iOS",
+    "raw_payload": "{\"session_duration\":1935}",
+    "metadata": {
+      "session_id": "sess_stu789",
+      "client_version": "v4.1.0",
+      "tags": [
+        "celebrity",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "j6m9n8i0-1k2l-3j4m-5i6d-7e8f9g0h1i2j",
+    "timestamp": "2025-08-01T10:30:00.000Z",
+    "user_data": {
+      "user_id": 1776,
+      "profile": {
+        "firstName": "Nancy",
+        "lastName": "Drew",
+        "email": "nancy.drew@mystery.com",
+        "dob": "1930-04-28",
+        "address": {
+          "street": "1 Mystery Lane",
+          "city": "River Heights",
+          "state": "IL",
+          "postal_code": "62701",
+          "country_code": "US"
+        }
+      },
+      "account_status": null
+    },
+    "event_type": "search",
+    "event_details": {
+      "query": "hidden staircase",
+      "result_count": 3,
+      "filters_applied": {
+        "category": "books"
+      }
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"search_latency_ms\":55,\"search_engine_version\":\"v3.2\"}",
+    "metadata": {
+      "session_id": "sess_vwx012",
+      "client_version": "v2.3.0",
+      "tags": [
+        "power_user",
+        "region:us-west-2"
+      ]
+    }
+  },
+  {
+    "event_id": "k7n0o9j1-2l3m-4k5n-6j7e-8f9g0h1i2j3k",
+    "timestamp": "2025-08-02T15:00:15.842+02:00",
+    "user_data": {
+      "user_id": 1812,
+      "profile": {
+        "name": "Napoleon Bonaparte",
+        "email": "emperor@france.fr",
+        "dob": "15/08/1769",
+        "address": {
+          "street": "Rue Saint-Honoré",
+          "city": "Paris",
+          "state": "IDF",
+          "postal_code": "75001",
+          "country_code": "FR"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "password_reset_request",
+    "event_details": {
+      "method": "email"
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"email_sent_to\":\"emperor@france.fr\",\"token_expires_in_minutes\":60}",
+    "metadata": {
+      "session_id": "sess_yza345",
+      "client_version": "v2.3.1",
+      "tags": []
+    }
+  },
+  {
+    "event_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "timestamp": "2025-07-15T08:20:30.123Z",
+    "user_data": {
+      "user_id": 2001,
+      "profile": {
+        "name": "Olivia Pope",
+        "email": "olivia@popeandassociates.com",
+        "dob": "1977-04-05",
+        "address": {
+          "street": "1215 19th St NW",
+          "city": "Washington",
+          "state": "DC",
+          "postal_code": "20036",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-007",
+      "product_name": "White Hat",
+      "quantity": 1,
+      "price_details": {
+        "amount": 1500.00,
+        "currency": "USD"
+      },
+      "discounts_applied": null
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_handleit123\",\"payment_method\":\"WireTransfer\"}",
+    "metadata": {
+      "session_id": "sess_gladiator",
+      "client_version": "v3.0.0",
+      "tags": [
+        "vip",
+        "fixer",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "b2c3d4e5-f6a7-b8c9-d0e1-f2a3b4c5d6e7",
+    "timestamp": "2025-07-16T11:45:10.456-05:00",
+    "user_data": {
+      "userId": 2010,
+      "profile": {
+        "firstName": "Peter",
+        "lastName": "Pan",
+        "email": "peter@neverland.org",
+        "dob": "1904-12-27",
+        "address": {
+          "street": "2nd Star to the Right",
+          "city": "Neverland",
+          "state": null,
+          "postal_code": null,
+          "country_code": "NL"
+        }
+      },
+      "account_status": "pending"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "72.229.28.185",
+      "device_type": "mobile"
+    },
+    "source": "MobileApp_Android",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"magic_link\"}",
+    "metadata": {
+      "session_id": "sess_lostboy",
+      "client_version": "v1.2.3",
+      "tags": [
+        "eternal_youth"
+      ]
+    }
+  },
+  {
+    "event_id": "c3d4e5f6-a7b8-c9d0-e1f2-a3b4c5d6e7f8",
+    "timestamp": "2025-07-17T14:50:20",
+    "user_data": {
+      "user_id": 2023,
+      "profile": {
+        "name": "Quentin Tarantino",
+        "email": "quentin@miramax.com",
+        "dob": "March 27, 1963",
+        "address": {
+          "street": "Hollywood Blvd",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90028,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "video_play",
+    "event_details": {
+      "video_id": "VID-PULP",
+      "duration_watched_sec": 9240,
+      "total_duration_sec": 9240
+    },
+    "source_system": "SmartTVApp",
+    "raw_payload": "{\"streaming_quality\":\"4K\",\"buffer_events\":2}",
+    "metadata": {
+      "session_id": "sess_royale",
+      "client_version": "v1.5.0",
+      "tags": [
+        "director",
+        "region:us-west-2"
+      ]
+    }
+  },
+  {
+    "event_id": "d4e5f6a7-b8c9-d0e1-f2a3-b4c5d6e7f8g9",
+    "timestamp": "2025-07-18T23:59:59Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/blog/new-features-2025",
+      "referrer": "https://t.co/link123",
+      "duration_seconds": 240
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"dom_load_ms\":95,\"ad_blocker_detected\":false}",
+    "metadata": {
+      "session_id": "sess_social",
+      "client_version": "v2.1.2",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8g9h0",
+    "timestamp": "2025-07-19T09:05:15.999+08:00",
+    "user_data": {
+      "user_id": 2042,
+      "profile": {
+        "firstName": "Rachel",
+        "lastName": "Green",
+        "email": "rachel@centralperk.com",
+        "dob": "1969-05-05",
+        "address": {
+          "street": "90 Bedford St",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10014",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-FASH",
+      "product_name": "Leather Boots",
+      "quantity": 1,
+      "price_details": {
+        "amount": 199.99,
+        "currency": "USD"
+      },
+      "discounts_applied": [
+        "FRIENDS25"
+      ]
+    },
+    "source_system": "MobileApp_iOS",
+    "raw_payload": "{\"transaction_id\":\"txn_rachel123\",\"payment_method\":\"CreditCard\",\"card_last4\":\"1234\"}",
+    "metadata": {
+      "session_id": "sess_friends",
+      "client_version": "v4.2.0",
+      "tags": [
+        "fashion",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "f6a7b8c9-d0e1-f2a3-b4c5-d6e7f8g9h0i1",
+    "timestamp": "2025-07-20T18:30:00.000Z",
+    "user_data": {
+      "user_id": 2056,
+      "profile": {
+        "name": "Steve Rogers",
+        "email": "captain@avengers.com",
+        "dob": "July 04, 1918",
+        "address": {
+          "street": "Brooklyn",
+          "city": "New York",
+          "state": "NY",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "update_profile",
+    "event_details": {
+      "fields_updated": [
+        "profile_picture"
+      ]
+    },
+    "source": "MobileApp_Android",
+    "raw_payload": "{\"image_size_kb\":2048,\"image_format\":\"jpeg\"}",
+    "metadata": {
+      "session_id": "sess_shield",
+      "client_version": "v3.0.0",
+      "tags": [
+        "super_soldier",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "a7b8c9d0-e1f2-a3b4-c5d6-e7f8g9h0i1j2",
+    "timestamp": "2025-07-21T00:01:02.345Z",
+    "user_data": {
+      "userId": 2063,
+      "profile": {
+        "firstName": "Tony",
+        "lastName": "Stark",
+        "email": "tony-stark-industries.com",
+        "dob": "1970-05-29",
+        "address": {
+          "street": "10880 Malibu Point",
+          "city": "Malibu",
+          "state": "CA",
+          "postal_code": 90265,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "api_access",
+    "event_details": {
+      "endpoint": "/v3/jarvis/status",
+      "api_key_used": "key_ironman_..."
+    },
+    "source_system": "API",
+    "raw_payload": "{\"request_source\":\"internal_dashboard\",\"response_time_ms\":12}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "N/A",
+      "tags": [
+        "genius",
+        "billionaire",
+        "playboy",
+        "philanthropist"
+      ]
+    }
+  },
+  {
+    "event_id": "b8c9d0e1-f2a3-b4c5-d6e7-f8g9h0i1j2k3",
+    "timestamp": "2025-07-22T04:20:10.111-08:00",
+    "user_data": {
+      "user_id": 2077,
+      "profile": {
+        "name": "Ursula",
+        "email": "ursula@sea.witch",
+        "dob": "October 31, 1950",
+        "address": {
+          "street": "Under the Sea",
+          "city": "Atlantica",
+          "state": null,
+          "country_code": "OC"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "contract_signed",
+    "event_details": {
+      "contract_id": "CONTRACT-ARIEL",
+      "terms": "Voice for Legs"
+    },
+    "source": "MagicalScroll",
+    "raw_payload": "{\"signature_type\":\"tentacle_ink\",\"notary\":\"Flotsam & Jetsam\"}",
+    "metadata": {
+      "session_id": "sess_poorunfortunate",
+      "client_version": "v-ancient",
+      "tags": [
+        "villain",
+        "magic_user"
+      ]
+    }
+  },
+  {
+    "event_id": "c9d0e1f2-a3b4-c5d6-e7f8-g9h0i1j2k3l4",
+    "timestamp": "2025-07-23T11:11:11.111Z",
+    "user_data": {
+      "user_id": 2088,
+      "profile": {
+        "firstName": "Vito",
+        "lastName": "Corleone",
+        "email": "godfather@oliveoil.com",
+        "dob": "07/12/1891",
+        "address": {
+          "street": "Long Island",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "11549",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "offer_made",
+    "event_details": {
+      "offer_id": "OFFER-REFUSE",
+      "recipient": "Jack Woltz"
+    },
+    "source_system": "FamilyBusiness",
+    "raw_payload": "{\"consigliere\":\"Tom Hagen\",\"outcome\":\"accepted\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": null,
+      "tags": [
+        "don",
+        "family_head"
+      ]
+    }
+  },
+  {
+    "event_id": "d0e1f2a3-b4c5-d6e7-f8g9-h0i1j2k3l4m5",
+    "timestamp": "2025-07-24T16:40:00.000Z",
+    "user_data": {
+      "user_id": 2099,
+      "profile": {
+        "name": "Walter White",
+        "email": "heisenberg@savewalterwhite.com",
+        "dob": "1958-09-07",
+        "address": {
+          "street": "308 Negra Arroyo Lane",
+          "city": "Albuquerque",
+          "state": "NM",
+          "postal_code": 87104,
+          "country_code": "US"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "experiment_start",
+    "event_details": {
+      "experiment_id": "EXP-BLUE-SKY",
+      "batch_number": 99
+    },
+    "source": "RV_Lab",
+    "raw_payload": "{\"yield_purity_percent\":99.1,\"partner\":\"Jesse Pinkman\"}",
+    "metadata": {
+      "session_id": "sess_iamtheonewhoknocks",
+      "client_version": "v5.final",
+      "tags": [
+        "chemist",
+        "high_risk"
+      ]
+    }
+  },
+  {
+    "event_id": "e1f2a3b4-c5d6-e7f8-g9h0-i1j2k3l4m5n6",
+    "timestamp": "2025-07-25T20:00:00.000+09:00",
+    "user_data": {
+      "userId": 2100,
+      "profile": {
+        "firstName": "Xenomorph",
+        "lastName": "XX121",
+        "email": null,
+        "dob": null,
+        "address": {
+          "street": "Derelict Ship",
+          "city": "LV-426",
+          "state": "Acheron",
+          "postal_code": null,
+          "country_code": null
+        }
+      },
+      "account_status": "hostile"
+    },
+    "event_type": "entity_detected",
+    "event_details": {
+      "entity_type": "human",
+      "distance_meters": 10
+    },
+    "source_system": "MotionTracker",
+    "raw_payload": "{\"lifeform_signature\":\"high\",\"threat_level\":\"critical\"}",
+    "metadata": {
+      "session_id": "sess_nostromo",
+      "client_version": "MU-TH-UR 6000",
+      "tags": [
+        "alien",
+        "perfect_organism"
+      ]
+    }
+  },
+  {
+    "event_id": "f2a3b4c5-d6e7-f8g9-h0i1-j2k3l4m5n6o7",
+    "timestamp": "2025-07-26T12:00:01.000Z",
+    "user_data": {
+      "user_id": 2112,
+      "profile": {
+        "name": "Yoda",
+        "email": "yoda@jediorder.org",
+        "dob": "896 BBY",
+        "address": {
+          "street": "Swamp",
+          "city": "Dagobah System",
+          "state": null,
+          "country_code": "Outer Rim"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "meditation_session",
+    "event_details": {
+      "duration_hours": 4,
+      "focus": "The Force"
+    },
+    "source": "TheForce",
+    "raw_payload": "{\"disturbance_detected\":true,\"source\":\"Alderaan\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "ancient",
+      "tags": [
+        "jedi_master",
+        "wise"
+      ]
+    }
+  },
+  {
+    "event_id": "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
+    "timestamp": "2025-07-27T07:07:07.777-04:00",
+    "user_data": {
+      "user_id": 2121,
+      "profile": {
+        "firstName": "Zorro",
+        "lastName": null,
+        "email": "zorro@delavega.es",
+        "dob": "1790-01-01",
+        "address": {
+          "street": "Hacienda",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90012,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "mark_left",
+    "event_details": {
+      "mark": "Z",
+      "location": "Sgt. Garcia's Office Wall"
+    },
+    "source_system": "SwordTip",
+    "raw_payload": "{\"material\":\"wood\",\"speed\":\"rapier_fast\"}",
+    "metadata": {
+      "session_id": "sess_tornado",
+      "client_version": "1.0",
+      "tags": [
+        "vigilante",
+        "folk_hero"
+      ]
+    }
+  },
+  {
+    "event_id": "b4c5d6e7-f8g9-h0i1-j2k3-l4m5n6o7p8q9",
+    "timestamp": "2025-07-14T21:00:00.000Z",
+    "user_data": {
+      "user_id": 1088,
+      "profile": {
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "email": "bob.smith@work.net",
+        "dob": "21/08/1985",
+        "address": {
+          "street": "456 Oak Ave",
+          "city": "Toronto",
+          "state": "ON",
+          "postal_code": "M5V 2T6",
+          "country_code": "CA"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "support_ticket_created",
+    "event_details": {
+      "ticket_id": 8675309,
+      "subject": "Cannot log in on new device",
+      "priority": "High"
+    },
+    "source": "HelpDeskUI",
+    "raw_payload": "{\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36\",\"attachments_count\":0}",
+    "metadata": {
+      "session_id": "sess_helpme",
+      "client_version": "v1.8.2",
+      "tags": [
+        "support_request",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "c5d6e7f8-g9h0-i1j2-k3l4-m5n6o7p8q9r0",
+    "timestamp": "2025-07-13T10:10:10.010Z",
+    "user_data": {
+      "userId": 3055,
+      "profile": {
+        "name": "Diana Prince",
+        "email": "diana.prince@themyscira.org",
+        "dob": "1941-10-25",
+        "address": {
+          "street": "1 Paradise Island",
+          "city": "Mumbai",
+          "state": "MH",
+          "postal_code": "400001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "pending"
+    },
+    "event_type": "account_verification",
+    "event_details": {
+      "method": "email",
+      "verification_status": "sent"
+    },
+    "source_system": "AuthService",
+    "raw_payload": "{\"token_id\":\"verify_token_12345\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "v1.0.0",
+      "tags": [
+        "onboarding",
+        "region:ap-south-1"
+      ]
+    }
+  },
+  {
+    "event_id": "d6e7f8g9-h0i1-j2k3-l4m5-n6o7p8q9r0s1",
+    "timestamp": "2025-07-12T19:55:44.888Z",
+    "user_data": {
+      "user_id": 4011,
+      "profile": {
+        "name": "Eve Adams",
+        "email": "eve@first.com",
+        "dob": "January 01, 1970",
+        "address": {
+          "street": "1 Garden Path",
+          "city": "Sydney",
+          "state": "NSW",
+          "postal_code": "2000",
+          "country_code": "AU"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "subscription_cancelled",
+    "event_details": {
+      "subscription_id": "sub_123",
+      "reason": "No longer needed",
+      "feedback_score": 3
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"cancellation_processed_by\":\"billing_system\",\"refund_issued_amount\":0}",
+    "metadata": {
+      "session_id": "sess_goodbye",
+      "client_version": "v2.2.5",
+      "tags": [
+        "churn",
+        "region:ap-southeast-2"
+      ]
+    }
+  },
+  {
+    "event_id": "e7f8g9h0-i1j2-k3l4-m5n6-o7p8q9r0s1t2",
+    "timestamp": "2025-07-11T06:00:30.000Z",
+    "user_data": {
+      "user_id": 1337,
+      "profile": {
+        "name": "Judy Garland",
+        "email": "judy@oz.net",
+        "dob": "June 10, 1922",
+        "address": {
+          "street": "Yellow Brick Road",
+          "city": "Emerald City",
+          "state": "OZ",
+          "postal_code": 90210,
+          "country_code": "OZ"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "192.0.2.146",
+      "device_type": "desktop"
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"login_success\":false,\"reason\":\"account_locked\"}",
+    "metadata": {
+      "session_id": "sess_lockedout",
+      "client_version": "v1.5.0",
+      "tags": [
+        "security_event"
+      ]
+    }
+  },
+  {
+    "event_id": "f8g9h0i1-j2k3-l4m5-n6o7-p8q9r0s1t2u3",
+    "timestamp": "2025-07-10T22:10:05.432Z",
+    "user_data": {
+      "user_id": 1601,
+      "profile": {
+        "name": "Michael Jordan",
+        "email": "mj23@bulls.com",
+        "dob": "February 17, 1963",
+        "address": {
+          "street": "1901 W Madison St",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": 60612,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "review_submitted",
+    "event_details": {
+      "product_id": "PROD-23",
+      "rating": 5,
+      "review_text": "These are the best shoes ever!"
+    },
+    "source": "MobileApp_iOS",
+    "raw_payload": "{\"review_length_chars\":32,\"contains_media\":false}",
+    "metadata": {
+      "session_id": "sess_review123",
+      "client_version": "v4.1.1",
+      "tags": [
+        "celebrity",
+        "user_generated_content",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "g9h0i1j2-k3l4-m5n6-o7p8-q9r0s1t2u3v4",
+    "timestamp": "2025-08-03T11:50:45.123Z",
+    "user_data": {
+      "userId": 1812,
+      "profile": {
+        "firstName": "Napoleon",
+        "lastName": "Bonaparte",
+        "email": "emperor@france.fr",
+        "dob": "15/08/1769",
+        "address": {
+          "street": "Rue Saint-Honoré",
+          "city": "Paris",
+          "state": "IDF",
+          "postal_code": "75001",
+          "country_code": "FR"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "password_reset_success",
+    "event_details": {
+      "reset_method": "email"
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"ip_address\":\"91.121.169.3\",\"user_agent\":\"Mozilla/5.0 ...\"}",
+    "metadata": {
+      "session_id": "sess_newpass",
+      "client_version": "v2.3.1",
+      "tags": [
+        "account_recovery"
+      ]
+    }
+  },
+  {
+    "event_id": "h0i1j2k3-l4m5-n6o7-p8q9-r0s1t2u3v4w5",
+    "timestamp": "2025-08-04T09:30:15.000+05:30",
+    "user_data": {
+      "user_id": 2042,
+      "profile": {
+        "name": "Rachel Green",
+        "email": "rachel@centralperk.com",
+        "dob": "1969-05-05",
+        "address": {
+          "street": "90 Bedford St",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10014",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "item_returned",
+    "event_details": {
+      "order_id": "txn_rachel123",
+      "product_id": "PROD-FASH",
+      "reason": "Wrong size"
+    },
+    "source": "BackendJob",
+    "raw_payload": "{\"rma_number\":\"RMA-555123\",\"processed_by_employee\":\"Gunther\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "N/A",
+      "tags": [
+        "returns",
+        "logistics",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "i1j2k3l4-m5n6-o7p8-q9r0-s1t2u3v4w5x6",
+    "timestamp": "2025-07-29T14:22:33.456Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "firstName": "Alice",
+        "lastName": "Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "feature_flag_exposure",
+    "event_details": {
+      "flag_name": "new-checkout-flow",
+      "variant": "B"
+    },
+    "source_system": "FeatureToggleService",
+    "raw_payload": "{\"assignment_reason\":\"random_rollout\",\"cohort\":\"50_percent_users\"}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "experimentation",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "j2k3l4m5-n6o7-p8q9-r0s1-t2u3v4w5x6y7",
+    "timestamp": "2025-07-30T10:00:00.000Z",
+    "user_data": {
+      "user_id": 2063,
+      "profile": {
+        "name": "Tony Stark",
+        "email": "tony@stark-industries.com",
+        "dob": "1970-05-29",
+        "address": {
+          "street": "10880 Malibu Point",
+          "city": "Malibu",
+          "state": "CA",
+          "postal_code": 90265,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-REAC",
+      "product_name": "Arc Reactor Core",
+      "quantity": 5,
+      "price_details": {
+        "amount": 50000000.00,
+        "currency": "USD"
+      },
+      "discounts_applied": [
+        "SELFDISCOUNT"
+      ]
+    },
+    "source": "API",
+    "raw_payload": "{\"transaction_id\":\"txn_stark001\",\"payment_method\":\"CompanyAccount\"}",
+    "metadata": {
+      "session_id": "sess_jarvis_purchase",
+      "client_version": "v3.1",
+      "tags": [
+        "genius",
+        "billionaire",
+        "playboy",
+        "philanthropist",
+        "internal_purchase"
+      ]
+    }
+  },
+  {
+    "event_id": "k3l4m5n6-o7p8-q9r0-s1t2-u3v4w5x6y7z8",
+    "timestamp": "2025-07-31T18:18:18.181Z",
+    "user_data": {
+      "user_id": 2112,
+      "profile": {
+        "name": "Yoda",
+        "email": "yoda@jediorder.org",
+        "dob": "896 BBY",
+        "address": {
+          "street": "Swamp",
+          "city": "Dagobah System",
+          "state": null,
+          "country_code": "Outer Rim"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "force_ghost_communication",
+    "event_details": {
+      "recipient": "Luke Skywalker",
+      "message": "Patience you must have, my young Padawan."
+    },
+    "source_system": "TheForce",
+    "raw_payload": "{\"transmission_clarity\":\"high\",\"midichlorian_count_required\":20000}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "ancient",
+      "tags": [
+        "jedi_master",
+        "wise",
+        "post_mortem"
+      ]
+    }
+  },
+  {
+    "event_id": "c7a8b2f0-1e9d-4c3b-8a7e-ffffffffffff",
+    "timestamp": "2025-08-01T00:00:00.000Z",
+    "user_data": {
+      "user_id": null,
+      "profile": null,
+      "account_status": null
+    },
+    "event_type": "system_heartbeat",
+    "event_details": {
+      "service_name": "ETL-Pipeline-Monitor",
+      "status": "OK",
+      "load_avg": [0.1, 0.05, 0.01]
+    },
+    "source": "CronJob",
+    "raw_payload": "{\"timestamp_unix\":1722470400,\"memory_usage_mb\":128}",
+    "metadata": {
+      "session_id": "N/A",
+      "client_version": "1.0",
+      "tags": ["monitoring", "system_event"]
+    }
+  },
+  {
+    "event_id": "l4m5n6o7-p8q9-r0s1-t2u3-v4w5x6y7z8a9",
+    "timestamp": "2025-08-03T23:59:59.999Z",
+    "user_data": {
+      "user_id": 1492,
+      "profile": {
+        "firstName": "Ken",
+        "lastName": "Thompson",
+        "email": "ken@unix.org",
+        "dob": "1943-02-04",
+        "address": {
+          "street": "Bell Labs",
+          "city": "Bangalore",
+          "state": "KA",
+          "postal_code": "560001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "logout",
+    "event_details": {
+      "reason": "user_initiated"
+    },
+    "source_system": "BackendJob",
+    "raw_payload": "{\"session_duration\":86399}",
+    "metadata": {
+      "session_id": "sess_long_run",
+      "client_version": "N/A",
+      "tags": [
+        "internal",
+        "region:ap-south-1"
+      ]
+    }
+  },
+  {
+    "event_id": "m5n6o7p8-q9r0-s1t2-u3v4-w5x6y7z8a9b0",
+    "timestamp": "2025-07-28T12:00:00Z",
+    "user_data": {
+      "user_id": 1138,
+      "profile": {
+        "name": "Heidi Klum",
+        "email": "heidi.k@projectrunway.com",
+        "dob": "1973-06-01",
+        "address": {
+          "street": "Fashion Ave",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10018",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "add_to_wishlist",
+    "event_details": {
+      "product_id": "PROD-LUX01",
+      "product_name": "Diamond Necklace"
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"wishlist_id\":\"wl-heidi-1\",\"item_priority\":\"high\"}",
+    "metadata": {
+      "session_id": "sess_shopping",
+      "client_version": "v2.1.6",
+      "tags": [
+        "vip_customer",
+        "wishlist"
+      ]
+    }
+  },
+  {
+    "event_id": "n6o7p8q9-r0s1-t2u3-v4w5-x6y7z8a9b0c1",
+    "timestamp": "2025-07-15T16:30:00Z",
+    "user_data": {
+      "user_id": 1201,
+      "profile": {
+        "name": "Ivan Drago",
+        "email": "ivan.drago@ussr.gov",
+        "dob": "01/11/1961",
+        "address": {
+          "street": "Red Square 1",
+          "city": "Moscow",
+          "state": null,
+          "postal_code": "101000",
+          "country_code": "RU"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "security_alert",
+    "event_details": {
+      "alert_type": "Account Suspension",
+      "reason": "Multiple failed login attempts from different geographic locations."
+    },
+    "source_system": "FraudDetectionService",
+    "raw_payload": "{\"ips_logged\":[\"198.51.100.22\", \"103.22.201.5\", \"203.0.113.199\"]}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "v2.5",
+      "tags": [
+        "high_risk",
+        "security_event",
+        "account_lock"
+      ]
+    }
+  },
+  {
+    "event_id": "o7p8q9r0-s1t2-u3v4-w5x6-y7z8a9b0c1d2",
+    "timestamp": "2025-07-20T10:00:00-07:00",
+    "user_data": {
+      "user_id": 1555,
+      "profile": {
+        "name": "Lara Croft",
+        "email": "lara.croft@tomb-raider.com",
+        "dob": "14/02/1968",
+        "address": {
+          "street": "Croft Manor",
+          "city": "Surrey",
+          "postal_code": "GU25 4LE",
+          "country_code": "GB"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "GEAR-001",
+      "product_name": "Grappling Hook",
+      "quantity": 1,
+      "price_details": {
+        "amount": 120.50,
+        "currency": "GBP"
+      },
+      "discounts_applied": null
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_lara007\",\"payment_method\":\"TrustFund\"}",
+    "metadata": {
+      "session_id": "sess_adventure",
+      "client_version": "v3.0.1",
+      "tags": [
+        "adventurer",
+        "gear_purchase"
+      ]
+    }
+  },
+  {
+    "event_id": "p8q9r0s1-t2u3-v4w5-x6y7-z8a9b0c1d2e3",
+    "timestamp": "2025-07-25T14:31:00.000Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/checkout/confirm",
+      "referrer": "/cart",
+      "duration_seconds": 30
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"dom_load_ms\":78}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1",
+        "checkout_flow"
+      ]
+    }
+  },
+  {
+    "event_id": "q9r0s1t2-u3v4-w5x6-y7z8-a9b0c1d2e3f4",
+    "timestamp": "2025-07-26T14:00:00.000Z",
+    "user_data": {
+      "user_id": 2023,
+      "profile": {
+        "name": "Quentin Tarantino",
+        "email": "quentin@miramax.com",
+        "dob": "March 27, 1963",
+        "address": {
+          "street": "Hollywood Blvd",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90028,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "comment_posted",
+    "event_details": {
+      "video_id": "VID-PULP",
+      "comment_id": "cmt-1138",
+      "comment_text": "Iconic scene!"
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"comment_length\":13,\"parent_comment_id\":null}",
+    "metadata": {
+      "session_id": "sess_filmclub",
+      "client_version": "v2.3.5",
+      "tags": [
+        "director",
+        "user_generated_content"
+      ]
+    }
+  },
+  {
+    "event_id": "r0s1t2u3-v4w5-x6y7-z8a9-b0c1d2e3f4g5",
+    "timestamp": "2025-07-18T08:00:00Z",
+    "user_data": {
+      "user_id": 2056,
+      "profile": {
+        "name": "Steve Rogers",
+        "email": "captain@avengers.com",
+        "dob": "July 04, 1918",
+        "address": {
+          "street": "Brooklyn",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "11201",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "8.8.8.8",
+      "device_type": "mobile"
+    },
+    "source_system": "MobileApp_Android",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"shield_clearance\"}",
+    "metadata": {
+      "session_id": "sess_shield",
+      "client_version": "v3.0.0",
+      "tags": [
+        "super_soldier",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "s1t2u3v4-w5x6-y7z8-a9b0-c1d2e3f4g5h6",
+    "timestamp": "2025-07-22T22:22:22.222Z",
+    "user_data": {
+      "userId": 2077,
+      "profile": {
+        "firstName": "Ursula",
+        "lastName": null,
+        "email": "ursula@sea.witch",
+        "dob": "October 31, 1950",
+        "address": {
+          "street": "Under the Sea",
+          "city": "Atlantica",
+          "state": null,
+          "country_code": "OC"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "magic_spell_cast",
+    "event_details": {
+      "spell_name": "Bind Voice",
+      "target": "Ariel",
+      "result": "Success"
+    },
+    "source": "MagicalAmulet",
+    "raw_payload": "{\"power_source\":\"stolen_voices\",\"mana_cost\":100}",
+    "metadata": {
+      "session_id": "sess_poorunfortunate",
+      "client_version": "v-ancient",
+      "tags": [
+        "villain",
+        "magic_user",
+        "dark_magic"
+      ]
+    }
+  },
+  {
+    "event_id": "t2u3v4w5-x6y7-z8a9-b0c1-d2e3f4g5h6i7",
+    "timestamp": "2025-07-24T00:00:01Z",
+    "user_data": {
+      "user_id": 2099,
+      "profile": {
+        "name": "Walter White",
+        "email": "heisenberg@savewalterwhite.com",
+        "dob": "1958-09-07",
+        "address": {
+          "street": "308 Negra Arroyo Lane",
+          "city": "Albuquerque",
+          "state": "NM",
+          "postal_code": 87104,
+          "country_code": "US"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "distribution_deal",
+    "event_details": {
+      "partner_id": "GUS-FRING",
+      "volume_kg": 200,
+      "territory": "Southwest US"
+    },
+    "source": "BurnerPhone",
+    "raw_payload": "{\"logistics\":\"Los Pollos Hermanos\",\"payment_terms\":\"cash_only\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "2.0",
+      "tags": [
+        "chemist",
+        "high_risk",
+        "business_transaction"
+      ]
+    }
+  },
+  {
+    "event_id": "u3v4w5x6-y7z8-a9b0-c1d2-e3f4g5h6i7j8",
+    "timestamp": "2025-07-25T20:05:00.000+09:00",
+    "user_data": {
+      "user_id": 2100,
+      "profile": {
+        "name": "Xenomorph XX121",
+        "email": null,
+        "dob": null,
+        "address": {
+          "street": "Ventilation Shaft 3",
+          "city": "Nostromo",
+          "state": "Solomons",
+          "postal_code": null,
+          "country_code": null
+        }
+      },
+      "account_status": "hostile"
+    },
+    "event_type": "ambush",
+    "event_details": {
+      "target": "Dallas, Arthur",
+      "status": "MIA"
+    },
+    "source_system": "HiveMind",
+    "raw_payload": "{\"strategy\":\"stealth\",\"biomass_gain_kg\":80}",
+    "metadata": {
+      "session_id": "sess_nostromo",
+      "client_version": "MU-TH-UR 6000",
+      "tags": [
+        "alien",
+        "perfect_organism",
+        "hunting"
+      ]
+    }
+  },
+  {
+    "event_id": "v4w5x6y7-z8a9-b0c1-d2e3-f4g5h6i7j8k9",
+    "timestamp": "2025-07-27T07:10:00-04:00",
+    "user_data": {
+      "user_id": 2121,
+      "profile": {
+        "name": "Zorro",
+        "email": "zorro@delavega.es",
+        "dob": "1790-01-01",
+        "address": {
+          "street": "Hacienda",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90012,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "127.0.0.1",
+      "device_type": "horse"
+    },
+    "source": "SecretCaveTerminal",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"secret_identity\"}",
+    "metadata": {
+      "session_id": "sess_tornado",
+      "client_version": "1.0",
+      "tags": [
+        "vigilante",
+        "folk_hero"
+      ]
+    }
+  },
+  {
+    "event_id": "w5x6y7z8-a9b0-c1d2-e3f4-g5h6i7j8k9l0",
+    "timestamp": "2025-07-14T21:05:30.000Z",
+    "user_data": {
+      "user_id": 1088,
+      "profile": {
+        "name": "Bob Smith",
+        "email": "bob.smith@work.net",
+        "dob": "21/08/1985",
+        "address": {
+          "street": "456 Oak Ave",
+          "city": "Toronto",
+          "state": "ON",
+          "postal_code": "M5V 2T6",
+          "country_code": "CA"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "support_ticket_update",
+    "event_details": {
+      "ticket_id": 8675309,
+      "update_text": "Attached screenshot of error message.",
+      "status": "Open"
+    },
+    "source_system": "HelpDeskUI",
+    "raw_payload": "{\"attachments_count\":1,\"attachment_names\":[\"error.png\"]}",
+    "metadata": {
+      "session_id": "sess_helpme",
+      "client_version": "v1.8.2",
+      "tags": [
+        "support_request",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "x6y7z8a9-b0c1-d2e3-f4g5-h6i7j8k9l0m1",
+    "timestamp": "2025-07-13T10:15:00.000Z",
+    "user_data": {
+      "user_id": 3055,
+      "profile": {
+        "name": "Diana Prince",
+        "email": "diana.prince@themyscira.org",
+        "dob": "1941-10-25",
+        "address": {
+          "street": "1 Paradise Island",
+          "city": "Mumbai",
+          "state": "MH",
+          "postal_code": "400001",
+          "country_code": "IN"
+        }
+      },
+      "event_type": "account_verification_success",
+      "event_details": {
+        "method": "email"
+      },
+      "source": "AuthService",
+      "raw_payload": "{\"verification_ip\":\"103.56.220.1\"}",
+      "metadata": {
+        "session_id": "sess_jklmno",
+        "client_version": "v2.5.3",
+        "tags": [
+          "onboarding",
+          "new_user",
+          "region:ap-south-1"
+        ]
+      }
+    }
+  },
+  {
+    "event_id": "y7z8a9b0-c1d2-e3f4-g5h6-i7j8k9l0m1n2",
+    "timestamp": "2025-07-12T20:00:00Z",
+    "user_data": {
+      "user_id": 4011,
+      "profile": {
+        "firstName": "Eve",
+        "lastName": "Adams",
+        "email": "eve@first.com",
+        "dob": "January 01, 1970",
+        "address": {
+          "street": "1 Garden Path",
+          "city": "Sydney",
+          "state": "NSW",
+          "postal_code": "2000",
+          "country_code": "AU"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "1.1.1.1",
+      "device_type": "desktop"
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"password\"}",
+    "metadata": {
+      "session_id": "sess_wxy890",
+      "client_version": "v2.2.5",
+      "tags": [
+        "region:ap-southeast-2"
+      ]
+    }
+  },
+  {
+    "event_id": "z8a9b0c1-d2e3-f4g5-h6i7-j8k9l0m1n2o3",
+    "timestamp": "2025-07-11T06:05:00Z",
+    "user_data": {
+      "user_id": 1337,
+      "profile": {
+        "name": "Judy Garland",
+        "email": "judy@oz.net",
+        "dob": "June 10, 1922",
+        "address": {
+          "street": "Yellow Brick Road",
+          "city": "Emerald City",
+          "state": "OZ",
+          "postal_code": 90210,
+          "country_code": "OZ"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "password_reset_request",
+    "event_details": {
+      "method": "sms"
+    },
+    "source": "MobileApp_Android",
+    "raw_payload": "{\"phone_last4\":\"9876\"}",
+    "metadata": {
+      "session_id": "sess_lockedout",
+      "client_version": "v2.8.1",
+      "tags": [
+        "security_event",
+        "account_recovery"
+      ]
+    }
+  },
+  {
+    "event_id": "a9b0c1d2-e3f4-g5h6-i7j8-k9l0m1n2o3p4",
+    "timestamp": "2025-07-10T22:15:00.000Z",
+    "user_data": {
+      "user_id": 1601,
+      "profile": {
+        "name": "Michael Jordan",
+        "email": "mj23@bulls.com",
+        "dob": "February 17, 1963",
+        "address": {
+          "street": "1901 W Madison St",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": 60612,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "share",
+    "event_details": {
+      "content_type": "product",
+      "content_id": "PROD-23",
+      "platform": "twitter"
+    },
+    "source_system": "MobileApp_iOS",
+    "raw_payload": "{\"shared_url\":\"https://example.com/products/PROD-23?ref=mj23\"}",
+    "metadata": {
+      "session_id": "sess_review123",
+      "client_version": "v4.1.1",
+      "tags": [
+        "celebrity",
+        "social_media",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "b0c1d2e3-f4g5-h6i7-j8k9-l0m1n2o3p4q5",
+    "timestamp": "2025-08-03T12:00:00Z",
+    "user_data": {
+      "user_id": 1812,
+      "profile": {
+        "name": "Napoleon Bonaparte",
+        "email": "emperor@france.fr",
+        "dob": "15/08/1769",
+        "address": {
+          "street": "Rue Saint-Honoré",
+          "city": "Paris",
+          "state": "IDF",
+          "postal_code": "75001",
+          "country_code": "FR"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "91.121.169.4",
+      "device_type": "desktop"
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"password\"}",
+    "metadata": {
+      "session_id": "sess_new_reign",
+      "client_version": "v2.3.1",
+      "tags": [
+        "account_recovery"
+      ]
+    }
+  },
+  {
+    "event_id": "c1d2e3f4-g5h6-i7j8-k9l0-m1n2o3p4q5r6",
+    "timestamp": "2025-08-04T09:35:00.000+05:30",
+    "user_data": {
+      "user_id": 2042,
+      "profile": {
+        "name": "Rachel Green",
+        "email": "rachel@centralperk.com",
+        "dob": "1969-05-05",
+        "address": {
+          "street": "90 Bedford St",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10014",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-FASH-2",
+      "product_name": "Leather Boots (Correct Size)",
+      "quantity": 1,
+      "price_details": {
+        "amount": 199.99,
+        "currency": "USD"
+      },
+      "discounts_applied": null
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_rachel456\",\"payment_method\":\"StoreCredit\",\"original_order_id\":\"txn_rachel123\"}",
+    "metadata": {
+      "session_id": "sess_friends_again",
+      "client_version": "v2.4.0",
+      "tags": [
+        "fashion",
+        "exchange",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "d2e3f4g5-h6i7-j8k9-l0m1-n2o3p4q5r6s7",
+    "timestamp": "2025-07-29T14:30:00.000Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "survey_response",
+    "event_details": {
+      "survey_id": "nps-q3-2025",
+      "responses": {
+        "nps_score": 9,
+        "feedback": "Love the new checkout flow!"
+      }
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"response_time_sec\":120}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "feedback",
+        "nps",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "e3f4g5h6-i7j8-k9l0-m1n2-o3p4q5r6s7t8",
+    "timestamp": "2025-07-30T10:05:00.000Z",
+    "user_data": {
+      "user_id": 2063,
+      "profile": {
+        "name": "Tony Stark",
+        "email": "tony@stark-industries.com",
+        "dob": "1970-05-29",
+        "address": {
+          "street": "10880 Malibu Point",
+          "city": "Malibu",
+          "state": "CA",
+          "postal_code": 90265,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "system_upgrade",
+    "event_details": {
+      "system_name": "Mark XLII Armor OS",
+      "from_version": "42.0",
+      "to_version": "42.1"
+    },
+    "source_system": "JARVIS",
+    "raw_payload": "{\"download_size_gb\":10,\"install_time_sec\":300,\"reboot_required\":true}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "v3.1",
+      "tags": [
+        "genius",
+        "maintenance",
+        "internal_event"
+      ]
+    }
+  },
+  {
+    "event_id": "f4g5h6i7-j8k9-l0m1-n2o3-p4q5r6s7t8u9",
+    "timestamp": "2025-07-31T18:30:00.000Z",
+    "user_data": {
+      "user_id": 2112,
+      "profile": {
+        "name": "Yoda",
+        "email": "yoda@jediorder.org",
+        "dob": "896 BBY",
+        "address": {
+          "street": "Swamp",
+          "city": "Dagobah System",
+          "state": null,
+          "country_code": "Outer Rim"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/holocron/archives",
+      "referrer": null,
+      "duration_seconds": 7200
+    },
+    "source": "HolocronInterface",
+    "raw_payload": "{\"access_level\":\"master\"}",
+    "metadata": {
+      "session_id": "sess_archives",
+      "client_version": "ancient",
+      "tags": [
+        "jedi_master",
+        "research"
+      ]
+    }
+  },
+  {
+    "event_id": "a0000000-0000-0000-0000-000000000001",
+    "timestamp": "2025-08-02T00:00:00.000Z",
+    "user_data": {
+      "user_id": null,
+      "profile": {
+        "name": "System Daemon",
+        "email": "daemon@localhost",
+        "dob": null,
+        "address": null
+      },
+      "account_status": "system"
+    },
+    "event_type": "db_backup",
+    "event_details": {
+      "database": "prod_events_db",
+      "status": "success",
+      "backup_size_gb": 256
+    },
+    "source_system": "SystemScheduler",
+    "raw_payload": "{\"backup_location\":\"s3://prod-backups/events/2025-08-02\",\"duration_min\":35}",
+    "metadata": {
+      "session_id": "N/A",
+      "client_version": "N/A",
+      "tags": [
+        "maintenance",
+        "system_event",
+        "backup"
+      ]
+    }
+  },
+  {
+    "event_id": "00000001-a9b0-c1d2-e3f4-g5h6i7j8k9l0",
+    "timestamp": "2025-08-04T00:00:00.000Z",
+    "user_data": {
+      "user_id": 1492,
+      "profile": {
+        "firstName": "Ken",
+        "lastName": "Thompson",
+        "email": "ken@unix.org",
+        "dob": "1943-02-04",
+        "address": {
+          "street": "Bell Labs",
+          "city": "Bangalore",
+          "state": "KA",
+          "postal_code": "560001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "code_commit",
+    "event_details": {
+      "repository": "kernel_main",
+      "commit_hash": "c0ffee123456",
+      "branch": "master"
+    },
+    "source": "GitCLI",
+    "raw_payload": "{\"files_changed\":2,\"lines_added\":20,\"lines_removed\":5}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "2.40.1",
+      "tags": [
+        "internal",
+        "developer",
+        "vcs"
+      ]
+    }
+  },
+  {
+    "event_id": "00000002-b0c1-d2e3-f4g5-h6i7j8k9l0m1",
+    "timestamp": "2025-07-28T12:05:00Z",
+    "user_data": {
+      "user_id": 1138,
+      "profile": {
+        "name": "Heidi Klum",
+        "email": "heidi.k@projectrunway.com",
+        "dob": "1973-06-01",
+        "address": {
+          "street": "Fashion Ave",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "10018",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/wishlist",
+      "referrer": "/products/PROD-LUX01",
+      "duration_seconds": 120
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"dom_load_ms\":60}",
+    "metadata": {
+      "session_id": "sess_shopping",
+      "client_version": "v2.1.6",
+      "tags": [
+        "vip_customer",
+        "wishlist"
+      ]
+    }
+  },
+  {
+    "event_id": "00000003-c1d2-e3f4-g5h6-i7j8k9l0m1n2",
+    "timestamp": "2025-07-15T16:35:00Z",
+    "user_data": {
+      "user_id": 1201,
+      "profile": {
+        "name": "Ivan Drago",
+        "email": "ivan.drago@ussr.gov",
+        "dob": "01/11/1961",
+        "address": {
+          "street": "Red Square 1",
+          "city": "Moscow",
+          "state": null,
+          "postal_code": "101000",
+          "country_code": "RU"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "logout",
+    "event_details": {
+      "reason": "force_logout_by_system"
+    },
+    "source": "SecurityDaemon",
+    "raw_payload": "{\"active_sessions_terminated\":3}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v1.0.0",
+      "tags": [
+        "high_risk",
+        "security_event"
+      ]
+    }
+  },
+  {
+    "event_id": "00000004-d2e3-f4g5-h6i7-j8k9l0m1n2o3",
+    "timestamp": "2025-07-20T10:07:00-07:00",
+    "user_data": {
+      "user_id": 1555,
+      "profile": {
+        "name": "Lara Croft",
+        "email": "lara.croft@tomb-raider.com",
+        "dob": "14/02/1968",
+        "address": {
+          "street": "Croft Manor",
+          "city": "Surrey",
+          "postal_code": "GU25 4LE",
+          "country_code": "GB"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "update_profile",
+    "event_details": {
+      "fields_updated": [
+        "address.postal_code"
+      ]
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"update_source\":\"user_settings_page\",\"previous_postal_code\":null}",
+    "metadata": {
+      "session_id": "sess_adventure",
+      "client_version": "v3.0.1",
+      "tags": [
+        "adventurer",
+        "data_update"
+      ]
+    }
+  },
+  {
+    "event_id": "00000005-e3f4-g5h6-i7j8-k9l0m1n2o3p4",
+    "timestamp": "2025-07-25T14:31:30.000Z",
+    "user_data": {
+      "user_id": 1024,
+      "profile": {
+        "name": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "dob": "1990-05-15",
+        "address": {
+          "street": "123 Maple St",
+          "city": "Springfield",
+          "state": "IL",
+          "postal_code": "62704",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "add_to_cart",
+    "event_details": {
+      "item_id": "ITEM-5678",
+      "item_name": "USB-C Cable",
+      "quantity": 2
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"inventory_check\":\"passed\"}",
+    "metadata": {
+      "session_id": "sess_xyz789",
+      "client_version": "v2.1.0",
+      "tags": [
+        "loyal_customer",
+        "region:us-east-1",
+        "checkout_flow"
+      ]
+    }
+  },
+  {
+    "event_id": "00000006-f4g5-h6i7-j8k9-l0m1n2o3p4q5",
+    "timestamp": "2025-07-26T14:05:00.000Z",
+    "user_data": {
+      "user_id": 2023,
+      "profile": {
+        "name": "Quentin Tarantino",
+        "email": "quentin@miramax.com",
+        "dob": "March 27, 1963",
+        "address": {
+          "street": "Hollywood Blvd",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90028,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "like",
+    "event_details": {
+      "content_type": "comment",
+      "content_id": "cmt-1001"
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"notification_sent_to_author\":true}",
+    "metadata": {
+      "session_id": "sess_filmclub",
+      "client_version": "v2.3.5",
+      "tags": [
+        "director",
+        "social_interaction"
+      ]
+    }
+  },
+  {
+    "event_id": "00000007-g5h6-i7j8-k9l0-m1n2o3p4q5r6",
+    "timestamp": "2025-07-18T08:05:00Z",
+    "user_data": {
+      "user_id": 2056,
+      "profile": {
+        "name": "Steve Rogers",
+        "email": "captain@avengers.com",
+        "dob": "July 04, 1918",
+        "address": {
+          "street": "Brooklyn",
+          "city": "New York",
+          "state": "NY",
+          "postal_code": "11201",
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "mission_briefing_viewed",
+    "event_details": {
+      "mission_id": "MISSION-HYDRA-01",
+      "classification": "Top Secret"
+    },
+    "source": "MobileApp_Android",
+    "raw_payload": "{\"briefing_format\":\"video\",\"duration_sec\":180}",
+    "metadata": {
+      "session_id": "sess_shield",
+      "client_version": "v3.0.0",
+      "tags": [
+        "super_soldier",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "00000008-h6i7-j8k9-l0m1-n2o3p4q5r6s7",
+    "timestamp": "2025-07-22T22:30:00.222Z",
+    "user_data": {
+      "user_id": 2077,
+      "profile": {
+        "name": "Ursula",
+        "email": "ursula@sea.witch",
+        "dob": "October 31, 1950",
+        "address": {
+          "street": "Under the Sea",
+          "city": "Atlantica",
+          "state": null,
+          "country_code": "OC"
+        }
+      },
+      "account_status": "suspended"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/lair/cauldron",
+      "referrer": null,
+      "duration_seconds": 600
+    },
+    "source_system": "ScryingPool",
+    "raw_payload": "{}",
+    "metadata": {
+      "session_id": "sess_poorunfortunate",
+      "client_version": "v-ancient",
+      "tags": [
+        "villain",
+        "magic_user"
+      ]
+    }
+  },
+  {
+    "event_id": "00000009-i7j8-k9l0-m1n2-o3p4q5r6s7t8",
+    "timestamp": "2025-07-24T00:10:01Z",
+    "user_data": {
+      "user_id": 2099,
+      "profile": {
+        "name": "Walter White",
+        "email": "heisenberg@savewalterwhite.com",
+        "dob": "1958-09-07",
+        "address": {
+          "street": "308 Negra Arroyo Lane",
+          "city": "Albuquerque",
+          "state": "NM",
+          "postal_code": 87104,
+          "country_code": "US"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "CHEM-01",
+      "product_name": "Methylamine (1 Drum)",
+      "quantity": 1,
+      "price_details": {
+        "amount": 10000.00,
+        "currency": "USD"
+      },
+      "discounts_applied": null
+    },
+    "source": "BurnerPhone",
+    "raw_payload": "{\"transaction_id\":\"txn_chem_supply\",\"payment_method\":\"cash_dead_drop\"}",
+    "metadata": {
+      "session_id": null,
+      "client_version": "2.0",
+      "tags": [
+        "chemist",
+        "high_risk",
+        "raw_materials"
+      ]
+    }
+  },
+  {
+    "event_id": "00000010-j8k9-l0m1-n2o3-p4q5r6s7t8u9",
+    "timestamp": "2025-07-25T20:10:00.000+09:00",
+    "user_data": {
+      "user_id": 2100,
+      "profile": {
+        "name": "Xenomorph XX121",
+        "email": null,
+        "dob": null,
+        "address": {
+          "street": "Egg Chamber",
+          "city": "Derelict Ship",
+          "state": "Acheron",
+          "postal_code": null,
+          "country_code": null
+        }
+      },
+      "account_status": "hostile"
+    },
+    "event_type": "implant_host",
+    "event_details": {
+      "host_id": "Kane, Gilbert",
+      "implant_type": "facehugger"
+    },
+    "source": "HiveMind",
+    "raw_payload": "{\"incubation_period_hours\":12}",
+    "metadata": {
+      "session_id": "sess_nostromo",
+      "client_version": "MU-TH-UR 6000",
+      "tags": [
+        "alien",
+        "reproduction_cycle"
+      ]
+    }
+  },
+  {
+    "event_id": "00000011-k9l0-m1n2-o3p4-q5r6s7t8u9v0",
+    "timestamp": "2025-07-27T07:15:00-04:00",
+    "user_data": {
+      "user_id": 2121,
+      "profile": {
+        "name": "Zorro",
+        "email": "zorro@delavega.es",
+        "dob": "1790-01-01",
+        "address": {
+          "street": "Hacienda",
+          "city": "Los Angeles",
+          "state": "CA",
+          "postal_code": 90012,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "logout",
+    "event_details": {
+      "reason": "user_initiated"
+    },
+    "source_system": "SecretCaveTerminal",
+    "raw_payload": "{\"session_duration\":300}",
+    "metadata": {
+      "session_id": "sess_tornado",
+      "client_version": "1.0",
+      "tags": [
+        "vigilante",
+        "folk_hero"
+      ]
+    }
+  },
+  {
+    "event_id": "00000012-l0m1-n2o3-p4q5-r6s7t8u9v0w1",
+    "timestamp": "2025-07-14T21:10:00.000Z",
+    "user_data": {
+      "user_id": 1088,
+      "profile": {
+        "name": "Bob Smith",
+        "email": "bob.smith@work.net",
+        "dob": "21/08/1985",
+        "address": {
+          "street": "456 Oak Ave",
+          "city": "Toronto",
+          "state": "ON",
+          "postal_code": "M5V 2T6",
+          "country_code": "CA"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "faq_read",
+    "event_details": {
+      "faq_id": "login-issues",
+      "helpful": "yes"
+    },
+    "source": "HelpDeskUI",
+    "raw_payload": "{}",
+    "metadata": {
+      "session_id": "sess_helpme",
+      "client_version": "v1.8.2",
+      "tags": [
+        "support_request",
+        "self_service"
+      ]
+    }
+  },
+  {
+    "event_id": "00000013-m1n2-o3p4-q5r6-s7t8u9v0w1x2",
+    "timestamp": "2025-07-13T10:20:00.000Z",
+    "user_data": {
+      "user_id": 3055,
+      "profile": {
+        "name": "Diana Prince",
+        "email": "diana.prince@themyscira.org",
+        "dob": "1941-10-25",
+        "address": {
+          "street": "1 Paradise Island",
+          "city": "Mumbai",
+          "state": "MH",
+          "postal_code": "400001",
+          "country_code": "IN"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "login",
+    "event_details": {
+      "ip_address": "103.56.220.1",
+      "device_type": "mobile"
+    },
+    "source_system": "MobileApp_Android",
+    "raw_payload": "{\"login_success\":true,\"auth_method\":\"password\"}",
+    "metadata": {
+      "session_id": "sess_jklmno",
+      "client_version": "v2.5.3",
+      "tags": [
+        "new_user",
+        "region:ap-south-1"
+      ]
+    }
+  },
+  {
+    "event_id": "00000014-n2o3-p4q5-r6s7-t8u9v0w1x2y3",
+    "timestamp": "2025-07-12T20:05:00Z",
+    "user_data": {
+      "user_id": 4011,
+      "profile": {
+        "name": "Eve Adams",
+        "email": "eve@first.com",
+        "dob": "January 01, 1970",
+        "address": {
+          "street": "1 Garden Path",
+          "city": "Sydney",
+          "state": "NSW",
+          "postal_code": "2000",
+          "country_code": "AU"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "purchase",
+    "event_details": {
+      "product_id": "PROD-202",
+      "product_name": "Knowledge Book",
+      "quantity": 1,
+      "price_details": {
+        "amount": 99.99,
+        "currency": "AUD"
+      },
+      "discounts_applied": null
+    },
+    "source": "WebApp",
+    "raw_payload": "{\"transaction_id\":\"txn_knowledge1\",\"payment_method\":\"CreditCard\"}",
+    "metadata": {
+      "session_id": "sess_wxy890",
+      "client_version": "v2.2.5",
+      "tags": [
+        "region:ap-southeast-2"
+      ]
+    }
+  },
+  {
+    "event_id": "00000015-o3p4-q5r6-s7t8-u9v0w1x2y3z4",
+    "timestamp": "2025-07-11T06:06:00Z",
+    "user_data": {
+      "user_id": 1337,
+      "profile": {
+        "name": "Judy Garland",
+        "email": "judy-garland-no-email",
+        "dob": "June 10, 1922",
+        "address": {
+          "street": "Yellow Brick Road",
+          "city": "Emerald City",
+          "state": "OZ",
+          "postal_code": 90210,
+          "country_code": "OZ"
+        }
+      },
+      "account_status": "inactive"
+    },
+    "event_type": "password_reset_failure",
+    "event_details": {
+      "method": "sms",
+      "reason": "Invalid phone number on file"
+    },
+    "source_system": "MobileApp_Android",
+    "raw_payload": "{}",
+    "metadata": {
+      "session_id": "sess_lockedout",
+      "client_version": "v2.8.1",
+      "tags": [
+        "security_event",
+        "account_recovery"
+      ]
+    }
+  },
+  {
+    "event_id": "00000016-p4q5-r6s7-t8u9-v0w1x2y3z4a5",
+    "timestamp": "2025-07-10T22:20:00.000Z",
+    "user_data": {
+      "user_id": 1601,
+      "profile": {
+        "name": "Michael Jordan",
+        "email": "mj23@bulls.com",
+        "dob": "February 17, 1963",
+        "address": {
+          "street": "1901 W Madison St",
+          "city": "Chicago",
+          "state": "IL",
+          "postal_code": 60612,
+          "country_code": "US"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "notification_settings_updated",
+    "event_details": {
+      "notifications": {
+        "email": {
+          "promotions": false,
+          "updates": true
+        },
+        "push": {
+          "mentions": true
+        }
+      }
+    },
+    "source": "MobileApp_iOS",
+    "raw_payload": "{\"previous_settings\":{\"email\":{\"promotions\":true}}}",
+    "metadata": {
+      "session_id": "sess_settings",
+      "client_version": "v4.1.1",
+      "tags": [
+        "celebrity",
+        "settings_update",
+        "region:us-east-1"
+      ]
+    }
+  },
+  {
+    "event_id": "00000017-q5r6-s7t8-u9v0-w1x2y3z4a5b6",
+    "timestamp": "2025-08-03T12:05:00Z",
+    "user_data": {
+      "user_id": 1812,
+      "profile": {
+        "name": "Napoleon Bonaparte",
+        "email": "emperor@france.fr",
+        "dob": "15/08/1769",
+        "address": {
+          "street": "Rue Saint-Honoré",
+          "city": "Paris",
+          "state": "IDF",
+          "postal_code": "75001",
+          "country_code": "FR"
+        }
+      },
+      "account_status": "active"
+    },
+    "event_type": "page_view",
+    "event_details": {
+      "url": "/campaign_map/russia",
+      "referrer": "/dashboard",
+      "duration_seconds": 1812
+    },
+    "source_system": "WebApp",
+    "raw_payload": "{\"weather\":\"winter\",\"supply_level\":\"low\"}",
+    "metadata": {
+      "session_id": "sess_new_reign",
+      "client_version": "v2.3.1",
+      "tags": [
+        "strategy"
+      ]
+    }
+  }
+]
